@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="cards-container">
+    <div class="person-card">
+      <div class="person-info">
+        <img src="/images/image-jeremy.png" alt="Jeremy" class="person-image">
+        <p  class="name-container">
+          <span class="pre-name">Report for</span> <br><span id="person-name">Jeremy Robson</span>
+        </p>
+      </div>
+      <div class="duration">
+        <h4 class="period daily active">Daily</h4>
+        <h4 class="period weekly">Weekly</h4>
+        <h4 class="period monthly">Monthly</h4>
+      </div>
+    </div>
+    <div class="activity-card">
+      <div class="design-container work-card">
+        <img src="/images/icon-work.svg" alt="Work ico" class="design-image">
+      </div>
+      <div class="time-container">
+        <div class="first-line">
+          <p class="activity-type">Work</p>
+          <img src="/images/icon-ellipsis.svg" alt="Dots" class="dots">
+        </div>
+        <div class="second-line">
+          <p class="hours"></p>
+          <p class="last-time-hours"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activity-card">
+      <div class="design-container play-card">
+        <img src="/images/icon-play.svg" alt="Play ico" class="design-image">
+      </div>
+      <div class="time-container">
+        <div class="first-line">
+          <p class="activity-type">Play</p>
+          <img src="/images/icon-ellipsis.svg" alt="Dots" class="dots">
+        </div>
+        <div class="second-line">
+          <p class="hours"></p>
+          <p class="last-time-hours"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activity-card">
+      <div class="design-container study-card">
+        <img src="/images/icon-study.svg" alt="Study ico" class="design-image">
+      </div>
+      <div class="time-container">
+        <div class="first-line">
+          <p class="activity-type">Study</p>
+          <img src="/images/icon-ellipsis.svg" alt="Dots" class="dots">
+        </div>
+        <div class="second-line">
+          <p class="hours"></p>
+          <p class="last-time-hours"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activity-card">
+      <div class="design-container exercise-card">
+        <img src="/images/icon-exercise.svg" alt="Exercise ico" class="design-image">
+      </div>
+      <div class="time-container">
+        <div class="first-line">
+          <p class="activity-type">Exercise</p>
+          <img src="/images/icon-ellipsis.svg" alt="Dots" class="dots">
+        </div>
+        <div class="second-line">
+          <p class="hours"></p>
+          <p class="last-time-hours"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activity-card">
+      <div class="design-container social-card">
+        <img src="/images/icon-social.svg" alt="Social ico" class="design-image">
+      </div>
+      <div class="time-container">
+        <div class="first-line">
+          <p class="activity-type">Social</p>
+          <img src="/images/icon-ellipsis.svg" alt="Dots" class="dots">
+        </div>
+        <div class="second-line">
+          <p class="hours"></p>
+          <p class="last-time-hours"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activity-card">
+      <div class="design-container self-care-card">
+        <img src="/images/icon-self-care.svg" alt="Self Care ico" class="design-image">
+      </div>
+      <div class="time-container">
+        <div class="first-line">
+          <p class="activity-type">Self Care</p>
+          <img src="/images/icon-ellipsis.svg" alt="Dots" class="dots">
+        </div>
+        <div class="second-line">
+          <p class="hours"></p>
+          <p class="last-time-hours"></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<!--
+  
+
+  Daily
+  
+
+  Work
+  5hrs
+  Previous - 7hrs
+  32hrs 
+  Previous - 36hrs 
+  103hrs 
+  Previous - 128hrs 
+
+  Play
+  1hr
+  Previous - 2hrs
+  10hrs 
+  Previous - 8hrs 
+  23hrs 
+  Previous - 29hrs 
+
+  Study
+  0hrs
+  Previous - 1hr
+  4hrs 
+  Previous - 7hrs 
+  13hrs 
+  Previous - 19hrs 
+
+  Exercise
+  1hr
+  Previous - 1hr
+  4hrs 
+  Previous - 5hrs 
+  11hrs 
+  Previous - 18hrs 
+
+  Social
+  1hr
+  Previous - 3hrs
+  5hrs 
+  Previous - 10hrs 
+  21hrs 
+  Previous - 23hrs 
+
+  Self Care
+  0hrs
+  Previous - 1hr
+  2hrs 
+  Previous - 2hrs 
+  7hrs 
+  Previous - 11hrs 
+-->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
