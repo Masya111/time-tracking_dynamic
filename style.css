@@ -17,7 +17,7 @@ body {
 }
 .person-info {
     margin-bottom: -15px;
-    background-color: hsl(264, 64%, 52%);
+    background-color: hsl(246, 80%, 60%);
     display: flex;
     z-index: 2;
     border-radius: 14px;
@@ -129,4 +129,70 @@ body {
 }
 .active {
     opacity: 1;
+}
+.period:hover {
+    opacity: 1;
+}
+.time-container:hover {
+    background-color: hsl(235, 22%, 30%);
+}
+.dots:hover {
+    filter: brightness(1.5);
+}
+@media screen and (min-width:764px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        max-width: 1000px;
+    }
+    .person-card {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .person-info {
+        flex-direction: column;
+        height: 65%;
+    }
+    .duration {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 20px;
+        height: 35%;
+    }
+    .period {
+        margin: 0;
+    }
+    .daily {
+        margin-top: 15px;
+    }
+    .monthly {
+        margin-bottom: 20px;
+    }
+    .hours {
+        font-size: 36px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .second-line {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .person-image {
+        margin-bottom: 30px;
+        align-self: flex-start;
+        width: 70px;
+        height: 70px;
+    }
+    #person-name {
+        font-size: 32px;
+    }
 }
